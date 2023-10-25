@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap");
+
+:root {
+  --redd: #b90022;
+  --purp: #ececec;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+.header img {
+  width: 150px;
+}
+.links {
+  margin: 20px;
+}
+.links a {
+  font-size: 18px;
+  text-decoration: none;
+  margin: 50px;
+  color: rgb(99, 23, 23);
+}
+.links a:hover {
+  transition: 0.1s ease;
+  color: var(--redd);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  height: 65vh;
+}
+.main {
+  background-color: var(--purp);
+  display: flex;
+  box-shadow: 0px 0px 20px 0px var(--redd);
+  border-radius: 10px;
+  margin: 20px;
+}
+.question {
+  width: 100%;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px var(--redd);
+  font-weight: bold;
+}
+.question ul {
+  padding: 0px;
+}
+.check-bt,
+.reset {
+  display: none;
+  background-color: #fff;
+  color: var(--redd);
+  box-shadow: 0px 0px 10px 0px red;
+  border: 2px solid var(--redd);
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+.check-bt:hover,
+.reset:hover {
+  background-color: var(--redd);
+  color: #fff;
+  transition: 0.3s ease;
+  transform: scale(1.05);
+}
+
+.footer-container {
+  text-align: center;
+  margin: 20px;
+  margin-top: 100px;
+  font-weight: bold;
+}
